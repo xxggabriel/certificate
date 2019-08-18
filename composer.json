@@ -14,10 +14,9 @@
         }
     ],
     "require": {
+        "xxggabriel/certificate" : "dev-master",
         "php": ">=7.2",
 		"ext-gd": "*",
-		"ext-json": "*",
-		"ext-mbstring": "*",
         "chillerlan/php-qrcode": "dev-master"
     },
     "autoload": {
@@ -25,6 +24,5 @@
             "Certificate\\" : "src\\"        
         }
     },
-    "minimum-stability": "dev-master",
-    "prefer-stable": true
+    "minimum-stability": "dev-master"
 }
