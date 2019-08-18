@@ -2,6 +2,9 @@
 
 Certificate, é uma biblioteca para gerar certificado automaticamente com o PHP, e tambem pode criar QR code nos certificados.
 
+## Requisitos do servidor
+* ext-gd
+* etx-curl
 
 ## Composer Install
 
@@ -37,6 +40,9 @@ $cert->run();
 ```
 $cert->run(__DIR__);
 ```
+## Dependência
+Foi utilizado a API do [Goqr](http://goqr.me/api/), para gerar os QR code.
+
 
 ## Licença
 A biblioteca Certificate é um software de código aberto licenciado sob a licença MIT.
