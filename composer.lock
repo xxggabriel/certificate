@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa572cb5302ca69de14d1e115256afa1",
+    "content-hash": "9a65d244c47675a26c7acb4cac97a69c",
     "packages": [
         {
             "name": "chillerlan/php-qrcode",
@@ -125,14 +125,14 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "chillerlan/php-qrcode": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "ext-gd": "*"
     },
     "platform-dev": []
 }
