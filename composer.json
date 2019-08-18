@@ -14,17 +14,17 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": ">=7.2",
 		"ext-gd": "*",
 		"ext-json": "*",
 		"ext-mbstring": "*",
-        "chillerlan/php-qrcode": "dev-master",
-		"chillerlan/php-settings-container": "^1.1"
+        "chillerlan/php-qrcode": "dev-master"
     },
     "autoload": {
         "psr-4": {
             "Certificate\\" : "src\\"        
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev-master",
+    "prefer-stable": true
 }
