@@ -15,7 +15,7 @@
     ],
     "require": {
 		"ext-gd": "*",
-        "chillerlan/php-qrcode": "dev-master"
+		"ext-curl": "*"
     },
     "require-dev": {
         
