@@ -63,7 +63,7 @@ class QRCode
     public function create()
     {
         $qr = new QR($this->options);
-        $tempQrCode = tempnam(sys_get_temp_dir(), 'QRCode-Certificate-'.rand(0,100)).'.png';
+        $tempQrCode = sys_get_temp_dir().'/'.  md5(uniqid()) . '-' . time() .'QRCode-Certificate-'.rand(0,100).'.png';
         $qr->render($this->data, $tempQrCode);
         return $tempQrCode;
     }

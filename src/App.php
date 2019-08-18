@@ -40,11 +40,11 @@ class App
         foreach ($data as $key) {
             $colorHex = $this->hex2RGB($key[4]);
             $colorImg = imagecolorset($this->img['certificate'], 0,$colorHex[0], $colorHex[1], $colorHex[2]);
-            imagettftext($this->img['certificate'], $key[1], 0,$key[2], $key[3], $colorImg, $key[5],$key[0]);
+            imagettftext($this->img['certificate'], $key[1], $key[6],$key[2], $key[3], $colorImg, $key[5],$key[0]);
         }       
     }
 
-    /**
+    /** 
      * <b>Generate QR Code: <b/> Generate QR code and add in certificate
      * @var string $data = Data to be generated in Qr code
      * @var string $size = QR code pixel size
@@ -107,8 +107,10 @@ class App
 
     public function __destruct()
     {
-        imagejpeg($this->img['certificate'], $this->dir, 100);      
-        imagedestroy($this->img['certificate']);
+        imagejpeg($this->img['certificate'], $this->dir.'/certificate-' . md5(uniqid()) . '-' . time() .'.jpeg', 100); 
+        if($this->dir === null){
+            imagedestroy($this->img['certificate']);
+        }     
     }
 
 
