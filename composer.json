@@ -1,0 +1,29 @@
+{
+    "name": "xxggabriel/certificate",
+    "description": "A certificate and diploma generator. PHP 7+",
+    "type": "library",  
+	"keywords": [
+		"Certificate", "qrcode", "qr", "qrcode-generator", "phpqrcode", "Certificate PHP", "degree"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Oliveira",
+            "email": "gabrieloliveradesouza9@gmail.com",
+            "homepage": "https://github.com/xxggabriel"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+		"ext-gd": "*",
+		"ext-json": "*",
+		"ext-mbstring": "*",
+        "chillerlan/php-qrcode": "dev-master",
+		"chillerlan/php-settings-container": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Certificate\\" : "src\\"        
+        }
+    }
+}
