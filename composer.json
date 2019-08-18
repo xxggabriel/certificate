@@ -14,7 +14,10 @@
         }
     ],
     "require": {
-		"ext-gd": "*",
+		"ext-gd": "*"
+        
+    },
+    "require-dev": {
         "chillerlan/php-qrcode": "dev-master"
     },
     "autoload": {
