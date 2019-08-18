@@ -30,3 +30,6 @@ $cert->run();
 ```
 $cert->run(__DIR__);
 ```
+
+## Licença
+A biblioteca Certificate é um software de código aberto licenciado sob a licença MIT.
