@@ -3,7 +3,7 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/vendor/autoload.php";
 
 header("Content-Type: image/jpeg");
 
-$cert = new \Certificate\App($_SERVER["DOCUMENT_ROOT"]."/test/img.jpeg", __DIR__);
+$cert = new \Certificate\App($_SERVER["DOCUMENT_ROOT"]."/test/img.jpeg");
 
 $name  = "Gabriel Oliveira";
 $cpf = "000.000.000-00";
@@ -16,4 +16,5 @@ $cert->createImage([
         '.$cpf.', concluiu com sucesso o curso de '.$course, 20, 70, 300, "#333", __DIR__."/fonts/Playball/Playball-Regular.ttf", 0],
     ]);
 $cert->QRCode('https://github.com/xxggabriel', 150, 650, 450);
+echo $cert->run(__DIR__);
 
