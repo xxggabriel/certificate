@@ -41,7 +41,7 @@ $cert->run();
 $cert->run(__DIR__);
 ```
 ## Dependência
-Foi utilizado a API do ![Goqr](http://goqr.me/api/), para gerar os QR code.
+Foi utilizado a API do [Goqr](http://goqr.me/api/), para gerar os QR code.
 
 
 ## Licença
