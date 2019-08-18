@@ -3,6 +3,12 @@
 Certificate, é uma biblioteca para gerar certificado automaticamente com o PHP, e tambem pode criar QR code nos certificados.
 
 
+## Composer Install
+
+```
+composer require xxggabriel/certificate:2.0.x-dev
+```
+
 ## Gerar Certificado
 ```
 <?php 
