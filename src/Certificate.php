@@ -69,7 +69,7 @@ class Certificate
      * @var string $image = Image to be validated
      * @return void
      */
-    public function validetionImage($image)
+    public function ImageValidation($image)
     {
         $type = exif_imagetype($image);
         
@@ -136,7 +136,7 @@ class Certificate
             throw new \Exception("File not found.", 1);
         }
 
-        $this->validetionImage($background);
+        $this->ImageValidation($background);
 
         $this->background = $background;
     }
