@@ -37,6 +37,9 @@ $cert->run();
 ```
 $cert->run(__DIR__);
 ```
+## Dependência
+Foi utilizado a API do ![Goqr](http://goqr.me/api/), para gerar os QR code.
+
 
 ## Licença
 A biblioteca Certificate é um software de código aberto licenciado sob a licença MIT.
