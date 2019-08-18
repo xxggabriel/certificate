@@ -7,7 +7,7 @@ namespace Certificate;
  * <b>App: </b>This class aims to create certificate
  * @author Gabriel Oliveira
  *  */
-class App
+class Certificate
 {
     /** 
      * @var string Certificate Background Image Directory
@@ -49,9 +49,8 @@ class App
      */
     public function QRCode($data, $size, $x = 0, $y = 0)
     {
-        $qr = new QRCode($data);
             
-        $this->img['QRcode'] = imagecreatefrompng($qr->create());
+        $this->img['QRcode'] = imagecreatefrompng(QRCode::create($data, $size));
         
         imagecopyresampled($this->img['certificate'], 
                         $this->img['QRcode'], 
