@@ -18,15 +18,10 @@ class App
      * @var array Array of imagecreatefromjpeg() objects 
      * */
     private $img = [];
-    /** 
-     * @var string Directory to save the certificate 
-     * */
-    private $dir;
-
-    public function __construct($background, $dir = null)
+    
+    public function __construct($background)
     {
         $this->setBackground($background);
-        $this->dir = $dir;
     }
 
     /**
@@ -105,12 +100,17 @@ class App
     }
 
 
-    public function __destruct()
+    public function run($dir = null)
     {
-        imagejpeg($this->img['certificate'], $this->dir.'/certificate-' . md5(uniqid()) . '-' . time() .'.jpeg', 100); 
-        if($this->dir === null){
-            imagedestroy($this->img['certificate']);
+        
+        $dirname = $dir == null ? null : $dir.'/certificate-' . md5(uniqid()) . '-' . time() .'.jpeg';
+        
+        imagejpeg($this->img['certificate'], $dirname , 100); 
+        
+        if($dir != null){
+            return $dirname;
         }     
+        imagedestroy($this->img['certificate']);
     }
 
 
