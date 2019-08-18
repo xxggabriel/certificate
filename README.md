@@ -25,6 +25,7 @@ $cert->QRCode('https://github.com/xxggabriel', 150, 650, 450);
 
 $cert->run();
 ```
+![Certificado Gerado](https://user-images.githubusercontent.com/38543235/63228576-5af46a00-c1cb-11e9-953e-41863456df80.jpeg)
 
 ## Salvar Certificado
 ```
