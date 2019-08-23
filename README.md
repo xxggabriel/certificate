@@ -9,7 +9,7 @@ Certificate, é uma biblioteca para gerar certificado automaticamente com o PHP,
 ## Composer Install
 
 ```
-composer require xxggabriel/certificate:2.0.x-dev
+composer require xxggabriel/certificate:1.1
 ```
 
 ## Gerar Certificado
