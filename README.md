@@ -1,6 +1,6 @@
 # Gerador de certificado
 
-Certificate, é uma biblioteca para gerar certificado automaticamente com o PHP, e tambem pode criar QR code nos certificados.
+Certificate, é uma biblioteca para gerar certificado automaticamente com o PHP, e também pode criar QR code nos certificados.
 
 ## Requisitos do servidor
 * ext-gd
